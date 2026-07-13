@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 520" width="880" height="520" fill="none" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" role="img" aria-label="Developer credential ID card for Marutey Mani">
+  <defs>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C1018"/>
+      <stop offset="1" stop-color="#06080E"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38E1C6"/>
+      <stop offset="0.5" stop-color="#7CC5FF"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <linearGradient id="runner" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38E1C6" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#7CF7E4"/>
+      <stop offset="0.55" stop-color="#C9B9FF"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38E1C6" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#7CF7E4" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#38E1C6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="holo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38E1C6" stop-opacity="0.0"/>
+      <stop offset="0.4" stop-color="#38E1C6" stop-opacity="0.35"/>
+      <stop offset="0.5" stop-color="#A78BFA" stop-opacity="0.55"/>
+      <stop offset="0.6" stop-color="#F5A524" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0.0"/>
+    </linearGradient>
+    <radialGradient id="monoGlow" cx="0.5" cy="0.45" r="0.6">
+      <stop offset="0" stop-color="#123" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#06080E" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M26 0H0V26" fill="none" stroke="#1a2333" stroke-width="0.6" stroke-opacity="0.5"/>
+    </pattern>
+    <clipPath id="cardClip">
+      <rect x="10" y="10" width="860" height="500" rx="26"/>
+    </clipPath>
+    <style>
+      .led   { transform-box: fill-box; transform-origin: center; animation: pulse 1.8s ease-in-out infinite; }
+      .flick { animation: flick 3.2s steps(1) infinite; }
+      @keyframes pulse { 0%,100% { opacity: 1 } 50% { opacity: .3 } }
+      @keyframes flick { 0%,92%,100% { opacity: .9 } 94% { opacity: .35 } 96% { opacity: .9 } }
+      text { -webkit-font-smoothing: antialiased; }
+    </style>
+  </defs>
+
+  <!-- Card body -->
+  <rect x="10" y="10" width="860" height="500" rx="26" fill="url(#cardBg)"/>
+  <g clip-path="url(#cardClip)">
+    <rect x="10" y="10" width="860" height="500" fill="url(#grid)"/>
+    <ellipse cx="150" cy="230" rx="230" ry="230" fill="url(#monoGlow)"/>
+
+    <!-- Holographic shimmer sweeping across the whole card -->
+    <rect x="-260" y="10" width="220" height="500" fill="url(#holo)" opacity="0.5">
+      <animate attributeName="x" values="-260;900" dur="6s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Vertical scan line -->
+    <rect x="10" y="-140" width="860" height="150" fill="url(#scan)">
+      <animate attributeName="y" values="-150;520" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Faint oversized watermark -->
+    <text x="486" y="470" text-anchor="end" font-size="220" font-weight="800" fill="#0f1622" opacity="0.55" letter-spacing="-8">MM</text>
+  </g>
+
+  <!-- Animated border -->
+  <rect x="10" y="10" width="860" height="500" rx="26" fill="none" stroke="#1E2634" stroke-width="1.5"/>
+  <rect x="10" y="10" width="860" height="500" rx="26" fill="none" stroke="url(#runner)" stroke-width="2.4"
+        pathLength="1000" stroke-dasharray="150 850" stroke-linecap="round">
+    <animate attributeName="stroke-dashoffset" from="0" to="-1000" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Header strip -->
+  <g>
+    <rect x="40" y="42" width="10" height="10" rx="2" fill="url(#accent)" transform="rotate(45 45 47)"/>
+    <text x="66" y="51" font-size="13" letter-spacing="3" fill="#8EA0B6" font-weight="600">PLAKSHA UNIVERSITY · B.TECH CS &amp; AI</text>
+    <text x="840" y="51" text-anchor="end" font-size="12.5" letter-spacing="2.5" font-family="'SFMono-Regular','Consolas',monospace" fill="#5E6C82" class="flick">CREDENTIAL // 2025—2029</text>
+  </g>
+  <line x1="40" y1="66" x2="840" y2="66" stroke="#161d2b" stroke-width="1"/>
+
+  <!-- Left: monogram + rings -->
+  <g transform="translate(150 208)">
+    <g fill="none" stroke-linecap="round">
+      <circle r="96" stroke="#1c2636" stroke-width="1"/>
+      <circle r="96" stroke="url(#accent)" stroke-width="2" stroke-dasharray="60 480" opacity="0.9">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="9s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="80" stroke="#1c2636" stroke-width="1"/>
+      <circle r="80" stroke="url(#accent)" stroke-width="1.6" stroke-dasharray="30 220" opacity="0.7">
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="7s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <!-- orbiting node -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="9s" repeatCount="indefinite"/>
+      <circle cx="0" cy="-96" r="3.6" fill="#7CF7E4"/>
+    </g>
+    <!-- monogram tile -->
+    <rect x="-56" y="-56" width="112" height="112" rx="22" fill="#0b1119" stroke="#243149" stroke-width="1.5"/>
+    <text x="0" y="20" text-anchor="middle" font-size="58" font-weight="800" fill="url(#accent)" letter-spacing="-2">MM</text>
+  </g>
+
+  <!-- status LED -->
+  <g transform="translate(150 340)">
+    <rect x="-92" y="-18" width="184" height="36" rx="18" fill="#0b1119" stroke="#1f2b3e" stroke-width="1"/>
+    <circle class="led" cx="-64" cy="0" r="5" fill="#34D399"/>
+    <circle cx="-64" cy="0" r="9" fill="none" stroke="#34D399" stroke-opacity="0.35" stroke-width="1"/>
+    <text x="-48" y="4.5" font-size="12.5" letter-spacing="2" font-family="'SFMono-Regular','Consolas',monospace" fill="#B8C4D4">OPEN TO BUILD</text>
+  </g>
+
+  <!-- Right: identity -->
+  <g>
+    <text x="300" y="150" font-size="49" font-weight="800" fill="#F2F4F8" letter-spacing="-1.5">MARUTEY MANI</text>
+    <text x="302" y="182" font-size="15.5" fill="#38E1C6" font-weight="600" letter-spacing="0.3">Full-Stack &amp; ML Engineer</text>
+    <text x="302" y="205" font-size="14" fill="#7E8DA3" letter-spacing="0.3">Operator · Designer · Researcher · Multi-domain builder</text>
+
+    <line x1="302" y1="226" x2="840" y2="226" stroke="#182132" stroke-width="1"/>
+
+    <!-- data grid -->
+    <g font-family="'SFMono-Regular','Consolas',monospace">
+      <text x="302" y="258" font-size="11" letter-spacing="2" fill="#55637A">ID</text>
+      <text x="302" y="278" font-size="15" fill="#DCE3EE">MM · DisturbedSage5840C</text>
+
+      <text x="620" y="258" font-size="11" letter-spacing="2" fill="#55637A">LOCATION</text>
+      <text x="620" y="278" font-size="15" fill="#DCE3EE">Mohali, India</text>
+
+      <text x="302" y="312" font-size="11" letter-spacing="2" fill="#55637A">FOCUS</text>
+      <text x="302" y="332" font-size="15" fill="#DCE3EE">Clinical AI · F1 · MLOps</text>
+
+      <text x="620" y="312" font-size="11" letter-spacing="2" fill="#55637A">CLEARANCE</text>
+      <text x="620" y="332" font-size="15" fill="#DCE3EE">Class of 2029</text>
+    </g>
+
+    <!-- specialization chips -->
+    <g font-size="12" font-weight="600" fill="#B7E9DF">
+      <rect x="302" y="356" width="118" height="28" rx="14" fill="#0c1a1c" stroke="#1f5a52" stroke-width="1"/>
+      <text x="361" y="374" text-anchor="middle">Production ML</text>
+      <rect x="430" y="356" width="96" height="28" rx="14" fill="#141126" stroke="#4a3f7a" stroke-width="1"/>
+      <text x="478" y="374" text-anchor="middle" fill="#CDBFFF">Full-Stack</text>
+      <rect x="536" y="356" width="110" height="28" rx="14" fill="#1a1510" stroke="#6b5326" stroke-width="1"/>
+      <text x="591" y="374" text-anchor="middle" fill="#F0CE93">Design &amp; Ops</text>
+      <rect x="656" y="356" width="104" height="28" rx="14" fill="#0c1a1c" stroke="#1f5a52" stroke-width="1"/>
+      <text x="708" y="374" text-anchor="middle">Research</text>
+    </g>
+  </g>
+
+  <!-- footer strip -->
+  <line x1="40" y1="424" x2="840" y2="424" stroke="#161d2b" stroke-width="1"/>
+  <!-- barcode -->
+  <g fill="#9FB0C6" transform="translate(40 446)">
+    <rect x="0"  y="0" width="2" height="34"/>
+    <rect x="5"  y="0" width="4" height="34"/>
+    <rect x="12" y="0" width="1.5" height="34"/>
+    <rect x="17" y="0" width="3" height="34"/>
+    <rect x="23" y="0" width="2" height="34"/>
+    <rect x="28" y="0" width="5" height="34"/>
+    <rect x="36" y="0" width="1.5" height="34"/>
+    <rect x="41" y="0" width="3" height="34"/>
+    <rect x="47" y="0" width="2" height="34"/>
+    <rect x="52" y="0" width="4" height="34"/>
+    <rect x="59" y="0" width="1.5" height="34"/>
+    <rect x="64" y="0" width="2.5" height="34"/>
+    <rect x="70" y="0" width="5" height="34"/>
+    <rect x="78" y="0" width="1.5" height="34"/>
+    <rect x="83" y="0" width="3" height="34"/>
+    <rect x="89" y="0" width="2" height="34"/>
+    <rect x="94" y="0" width="4" height="34"/>
+    <rect x="101" y="0" width="1.5" height="34"/>
+    <rect x="106" y="0" width="3" height="34"/>
+    <rect x="112" y="0" width="2" height="34"/>
+  </g>
+  <text x="40" y="494" font-size="10.5" letter-spacing="1.5" font-family="'SFMono-Regular','Consolas',monospace" fill="#4d5a70">AUTH · 0x4D4D · VERIFIED BUILDER</text>
+
+  <text x="840" y="458" text-anchor="end" font-size="13.5" font-family="'SFMono-Regular','Consolas',monospace" fill="#8EA0B6">github.com/DisturbedSage5840C</text>
+  <text x="840" y="480" text-anchor="end" font-size="12.5" font-family="'SFMono-Regular','Consolas',monospace" fill="#5E6C82">marutey-mani-portfolio.vercel.app</text>
+  <text x="840" y="500" text-anchor="end" font-size="11" letter-spacing="1" fill="#3f4a5e">RaceJudge · NeuroSynth · UHMS · RWE</text>
+</svg>

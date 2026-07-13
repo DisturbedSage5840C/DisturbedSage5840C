@@ -147,14 +147,33 @@ A production-grade F1 stewardship intelligence platform, built from scratch.
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=DisturbedSage5840C&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&title_color=38E1C6&text_color=DCE3EE&icon_color=A78BFA&bg_color=0C1018&custom_title=Marutey's+GitHub+Stats" alt="GitHub stats" />
-<img height="180" src="https://github-readme-streak-stats.herokuapp.com/?user=DisturbedSage5840C&hide_border=true&background=0C1018&stroke=182132&ring=38E1C6&fire=A78BFA&currStreakLabel=38E1C6&currStreakNum=DCE3EE&sideLabels=DCE3EE&sideNums=DCE3EE&dates=7E8DA3" alt="GitHub streak" />
+<!-- Followers (shields.io — always on) + streak (maintained demolab instance) -->
+<a href="https://github.com/DisturbedSage5840C?tab=followers"><img src="https://img.shields.io/github/followers/DisturbedSage5840C?style=for-the-badge&logo=github&logoColor=white&label=FOLLOWERS&color=38E1C6&labelColor=0C1018" alt="Followers" /></a>
+<img src="https://img.shields.io/badge/GitHub-Pro-A78BFA?style=for-the-badge&logo=github&logoColor=white&labelColor=0C1018" alt="GitHub Pro" />
+<img src="https://img.shields.io/badge/Achievements-YOLO_·_Pull_Shark_·_Quickdraw-F5A524?style=for-the-badge&logo=github&logoColor=white&labelColor=0C1018" alt="Achievements" />
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DisturbedSage5840C&layout=compact&hide_border=true&langs_count=10&title_color=38E1C6&text_color=DCE3EE&icon_color=A78BFA&bg_color=0C1018&custom_title=Most+Used+Languages" alt="Top languages" height="150" />
+<br/><br/>
 
-<img src="https://github-profile-trophy.vercel.app/?username=DisturbedSage5840C&theme=algolia&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6" alt="Trophies" />
+<img height="185" src="https://streak-stats.demolab.com/?user=DisturbedSage5840C&hide_border=true&background=0C1018&stroke=182132&ring=38E1C6&fire=A78BFA&currStreakLabel=38E1C6&currStreakNum=DCE3EE&sideLabels=DCE3EE&sideNums=DCE3EE&dates=7E8DA3" alt="GitHub streak" />
+
+<br/>
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=DisturbedSage5840C&bg_color=0C1018&color=DCE3EE&line=38E1C6&point=A78BFA&area=true&area_color=38E1C6&hide_border=true&custom_title=Contribution+Graph" alt="Activity graph" width="95%" />
+
+<!-- ─────────────────────────────────────────────────────────────────────────
+  RICH DYNAMIC CARDS (GitHub stats · Top languages · Trophies)
+  These live behind YOUR OWN self-hosted stats instance so they never pause /
+  rate-limit like the shared public one did. Once you deploy yours:
+    1. replace  YOUR-STATS-INSTANCE  with your Vercel domain (both lines)
+    2. replace  YOUR-TROPHY-INSTANCE with your trophy domain (optional)
+    3. delete these comment markers to un-hide them
+  ─────────────────────────────────────────────────────────────────────────
+
+<img height="180" src="https://YOUR-STATS-INSTANCE.vercel.app/api?username=DisturbedSage5840C&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&title_color=38E1C6&text_color=DCE3EE&icon_color=A78BFA&bg_color=0C1018&custom_title=Marutey's+GitHub+Stats" alt="GitHub stats" />
+<img src="https://YOUR-STATS-INSTANCE.vercel.app/api/top-langs/?username=DisturbedSage5840C&layout=compact&hide_border=true&langs_count=10&title_color=38E1C6&text_color=DCE3EE&icon_color=A78BFA&bg_color=0C1018&custom_title=Most+Used+Languages" alt="Top languages" height="150" />
+<img src="https://YOUR-TROPHY-INSTANCE.vercel.app/?username=DisturbedSage5840C&theme=algolia&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6" alt="Trophies" />
+
+  ───────────────────────────────────────────────────────────────────────── -->
 
 </div>
 

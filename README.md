@@ -180,6 +180,23 @@ A production-grade F1 stewardship intelligence platform, built from scratch.
 
 ---
 
+## ⚽ Scouting Report
+
+<div align="center">
+
+<!-- Live GitFut card — server-rendered from the GitHub API, re-scouts itself as stats change -->
+<a href="https://gitfut.com/DisturbedSage5840C?country=in">
+  <img src="https://gitfut.com/DisturbedSage5840C.png?country=in" alt="Marutey Mani — GitFut scouting card (live, auto-updating)" width="320" />
+</a>
+
+<br/>
+
+<sub>🔄 <b>Live card — it re-scouts itself as my stats change.</b> Built by <a href="https://github.com/younesfdj/gitfut">@younesfdj</a> · <a href="https://gitfut.com/DisturbedSage5840C?country=in">full scout report →</a></sub>
+
+</div>
+
+---
+
 ## 🎛️ Beyond the Code
 
 I don't just write software — I run things, design things, and write about things.
